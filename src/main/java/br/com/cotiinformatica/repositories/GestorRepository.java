@@ -12,6 +12,6 @@ import br.com.cotiinformatica.entities.Gestor;
 @Repository
 public interface GestorRepository extends JpaRepository<Gestor, UUID> {
 
-	@Query("select us from Gestor us where us.email = :pEmail and us.senha = :pSenha")
+	@Query("select ge from Gestor ge where ge.email = :pEmail and ge.senha = :pSenha")
 	Gestor findByEmailAndSenha(@Param("pEmail") String email, @Param("pSenha") String senha);
 }

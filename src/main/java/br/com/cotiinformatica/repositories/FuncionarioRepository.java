@@ -12,6 +12,6 @@ import br.com.cotiinformatica.entities.Funcionario;
 @Repository
 public interface FuncionarioRepository extends JpaRepository<Funcionario, UUID> {
 
-	@Query("select us from Funcionario us where us.email = :pEmail and us.senha = :pSenha")
+	@Query("select fu from Funcionario fu where fu.email = :pEmail and fu.senha = :pSenha")
 	Funcionario findByEmailAndSenha(@Param("pEmail") String email, @Param("pSenha") String senha);
 }

@@ -5,7 +5,7 @@ import java.util.UUID;
 import lombok.Data;
 
 @Data
-public class OperacaoResponse {
+public class HistoricoResponse {
 
 	private UUID id;
 	private UUID funcionario_id;

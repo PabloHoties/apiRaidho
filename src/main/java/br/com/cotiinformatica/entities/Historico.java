@@ -27,7 +27,7 @@ public class Historico {
 	private Funcionario funcionario;
 	
 	@Column(name = "operacao", length = 100, nullable = false)
-	private String operacao;
+	private Operacao operacao;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "data_hora_operacao")
