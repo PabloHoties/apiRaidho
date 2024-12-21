@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.cotiinformatica.dtos.CadastrarFuncionarioRequest;
+import br.com.cotiinformatica.dtos.FuncionarioRequest;
 import br.com.cotiinformatica.dtos.FuncionarioResponse;
 
 @RestController
 @RequestMapping("/api/funcionarios")
 public class FuncionariosController {
 
-	@PostMapping
-	public ResponseEntity<FuncionarioResponse> post(CadastrarFuncionarioRequest request) throws Exception {
+	@PostMapping("cadastrar")
+	public ResponseEntity<FuncionarioResponse> post(FuncionarioRequest request) throws Exception {
 		return null;
 	}
 	
@@ -29,6 +29,11 @@ public class FuncionariosController {
 	
 	@GetMapping("consultar")
 	public ResponseEntity<List<FuncionarioResponse>> getAll(UUID id) throws Exception {
+		return null;
+	}
+	
+	@PostMapping("autenticar")
+	public ResponseEntity<FuncionarioResponse> auth(FuncionarioRequest request) throws Exception {
 		return null;
 	}
 }

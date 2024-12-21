@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class CadastrarFuncionarioRequest {
+public class GestorRequest {
 
 	@NotEmpty(message = "Informe o nome do funcionário.")
 	@Size(min = 8, max = 100, message = "Infomre um nome com no mínimo 8 caracteres.")

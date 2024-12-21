@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.cotiinformatica.dtos.CadastrarGestorRequest;
+import br.com.cotiinformatica.dtos.GestorRequest;
 import br.com.cotiinformatica.dtos.GestorResponse;
 
 @RestController
@@ -17,13 +17,18 @@ import br.com.cotiinformatica.dtos.GestorResponse;
 public class GestoresController {
 
 	
-	@PostMapping
-	public ResponseEntity<GestorResponse> post(CadastrarGestorRequest request) throws Exception {
+	@PostMapping("cadastrar")
+	public ResponseEntity<GestorResponse> post(GestorRequest request) throws Exception {
 		return null;
 	}
 	
 	@GetMapping("obter/{id}")
-	public GestorResponse getById(@PathVariable UUID id) throws Exception {
+	public ResponseEntity<GestorResponse> getById(@PathVariable UUID id) throws Exception {
+		return null;
+	}
+	
+	@PostMapping("autenticar")
+	public ResponseEntity<GestorResponse> auth(GestorRequest request) throws Exception {
 		return null;
 	}
 }
