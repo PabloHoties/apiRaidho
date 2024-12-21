@@ -4,7 +4,7 @@ import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
-public class CadastrarOperacaoRequest {
+public class OperacaoRequest {
 	
 	@NotEmpty(message = "Informe a operação realizada.")
 	private String operacao;
