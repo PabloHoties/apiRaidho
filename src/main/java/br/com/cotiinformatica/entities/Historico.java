@@ -32,4 +32,10 @@ public class Historico {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "data_hora_operacao")
 	private Date dataHoraOperacao;
+	
+	@Column(name = "latitude", length = 100, nullable = false)
+	private String latitude;
+	
+	@Column(name = "longitude", length = 100, nullable = false)
+	private String longitude;
 }
