@@ -7,18 +7,20 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cotiinformatica.dtos.OperacaoRequest;
 import br.com.cotiinformatica.dtos.OperacaoResponse;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/historico")
 public class HistoricoController {
 
 	@PostMapping
-	public ResponseEntity<OperacaoResponse> post(OperacaoRequest request) throws Exception {
+	public ResponseEntity<OperacaoResponse> post(@RequestBody @Valid OperacaoRequest request) throws Exception {
 		return null;
 	}
 	

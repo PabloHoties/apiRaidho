@@ -6,11 +6,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.cotiinformatica.dtos.GestorRequest;
 import br.com.cotiinformatica.dtos.GestorResponse;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/gestores")
@@ -18,7 +20,7 @@ public class GestoresController {
 
 	
 	@PostMapping("cadastrar")
-	public ResponseEntity<GestorResponse> post(GestorRequest request) throws Exception {
+	public ResponseEntity<GestorResponse> post(@RequestBody @Valid GestorRequest request) throws Exception {
 		return null;
 	}
 	
@@ -28,7 +30,7 @@ public class GestoresController {
 	}
 	
 	@PostMapping("autenticar")
-	public ResponseEntity<GestorResponse> auth(GestorRequest request) throws Exception {
+	public ResponseEntity<GestorResponse> auth(@RequestBody @Valid GestorRequest request) throws Exception {
 		return null;
 	}
 }

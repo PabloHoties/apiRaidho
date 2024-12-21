@@ -1,10 +1,16 @@
 package br.com.cotiinformatica.dtos;
 
+import java.util.UUID;
+
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
 public class OperacaoRequest {
+	
+	@NotNull(message = "Informe o ID do funcionário.")
+	private UUID funcionario_id;
 	
 	@NotEmpty(message = "Informe a operação realizada.")
 	private String operacao;

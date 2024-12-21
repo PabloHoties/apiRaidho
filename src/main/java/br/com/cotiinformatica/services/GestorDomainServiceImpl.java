@@ -2,10 +2,13 @@ package br.com.cotiinformatica.services;
 
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import br.com.cotiinformatica.dtos.GestorRequest;
 import br.com.cotiinformatica.dtos.GestorResponse;
 import br.com.cotiinformatica.interfaces.GestorDomainService;
 
+@Service
 public class GestorDomainServiceImpl implements GestorDomainService {
 
 	@Override

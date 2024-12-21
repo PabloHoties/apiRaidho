@@ -3,10 +3,13 @@ package br.com.cotiinformatica.services;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import br.com.cotiinformatica.dtos.OperacaoRequest;
 import br.com.cotiinformatica.dtos.OperacaoResponse;
 import br.com.cotiinformatica.interfaces.HistoricoDomainService;
 
+@Service
 public class HistoricoDomainServiceImpl implements HistoricoDomainService {
 
 	@Override
