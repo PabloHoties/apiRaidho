@@ -30,7 +30,7 @@ public class Historico {
 	private Operacao operacao;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "data_hora_operacao")
+	@Column(name = "data_hora_operacao", nullable = false)
 	private Date dataHoraOperacao;
 	
 	@Column(name = "latitude", length = 100, nullable = false)

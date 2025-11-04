@@ -67,6 +67,7 @@ public class HistoricoDomainServiceImpl implements HistoricoDomainService {
 			historicoLoop.setOperacao(historico.getOperacao().toString());
 			historicoLoop.setLatitude(historico.getLatitude());
 			historicoLoop.setLongitude(historico.getLongitude());
+			historicoLoop.setDataHoraOperacao(historico.getDataHoraOperacao());
 			
 			response.add(historicoLoop);
 			indice++;
@@ -93,6 +94,7 @@ public class HistoricoDomainServiceImpl implements HistoricoDomainService {
 			historicoLoop.setOperacao(historico.getOperacao().toString());
 			historicoLoop.setLatitude(historico.getLatitude());
 			historicoLoop.setLongitude(historico.getLongitude());
+			historicoLoop.setDataHoraOperacao(historico.getDataHoraOperacao());
 			
 			response.add(historicoLoop);
 			indice++;
@@ -119,6 +121,7 @@ public class HistoricoDomainServiceImpl implements HistoricoDomainService {
 			historicoLoop.setOperacao(historico.getOperacao().toString());
 			historicoLoop.setLatitude(historico.getLatitude());
 			historicoLoop.setLongitude(historico.getLongitude());
+			historicoLoop.setDataHoraOperacao(historico.getDataHoraOperacao());
 			
 			response.add(historicoLoop);
 			indice++;

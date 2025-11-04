@@ -1,5 +1,6 @@
 package br.com.cotiinformatica.dtos;
 
+import java.util.Date;
 import java.util.UUID;
 
 import jakarta.validation.constraints.NotEmpty;
@@ -23,5 +24,5 @@ public class HistoricoRequest {
 	private String latitude;
 	
 	@NotEmpty(message = "Informe a longitude atual.")
-	private String longitude;
+	private String longitude;	
 }
